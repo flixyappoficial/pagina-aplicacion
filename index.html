@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargando...</title>
+    <style>
+        body {
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            backdrop-filter: blur(15px);
+        }
+        .loader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgb(0, 0, 0); /* Fondo semi-transparente para loader */
+        }
+        .loader img {
+            max-width: 70%;
+            max-height: 100%;
+        }
+        .container {
+            max-width: 400px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0); /* Fondo semi-transparente */
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0);
+            text-align: center;
+            display: none; /* Ocultar hasta que se cargue el contenido */
+            
+        }
+        .logo {
+            max-width: 50%; /* Reducir el tamaño máximo del logo */
+            height: auto;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 4px;
+            background-color: #e50914;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #b2070d;
+        }
+        .message {
+            margin-top: 10px;
+            color: red;
+            font-size: 14px;
+        }
+        h2 {
+            font-size: 24px; /* Reducir el tamaño de la fuente del encabezado */
+            color: rgb(255, 255, 255);
+        }
+        h3 {
+            font-size: 15px; /* Reducir el tamaño de la fuente del encabezado */
+            color: rgb(255, 255, 255);
+        }
+        h4 {
+            font-size: 15px; /* Reducir el tamaño de la fuente del encabezado */
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body style="background-image: url('https://www.cronista.com/files/image/506/506181/63c94f06a5588.jpg');">
+    <!-- Carga inicial con el GIF -->
+    <div class="loader">
+        <img src="Multimedia/loader_rojo.gif" alt="Cargando...">
+    </div>
+
+    <!-- Contenido principal después de la carga -->
+    <div id="contenido" class="container">
+        <img src="img/Flixy-logo.gif" class="logo" alt="Logo Netflix">
+        <h2>Bienvenidos</h2>
+        
+        <h3>Disfruta de los últimos estrenos  y de  una selección exclusiva de películas y series y mas contenido en
+            HD, español e idioma original </h3>
+
+            <h4> haora con flixy tube (YP)</h4>
+        <p class="message" id="errorMessage"></p>
+        
+        <!-- Botón para iniciar sesión -->
+        <button onclick="redirigir()">Iniciar</button>
+    </div>
+
+    <!-- Script para la redirección y mostrar contenido -->
+    <script>
+        function redirigir() {
+            window.location.href = 'https://flixyappoficial.github.io/inicio/'; // Cambia 'seccion-privada.html' por la URL correcta
+        }
+
+        // Simular carga de contenido después de un tiempo (ejemplo)
+        setTimeout(function() {
+            document.querySelector('.loader').style.display = 'none';
+            document.getElementById('contenido').style.display = 'block';
+        }, 0000); // 0000 milisegundos = 5 segundos
+    </script>
+</body>
+</html>
