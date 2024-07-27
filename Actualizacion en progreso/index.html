@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualización en Progreso</title>
+    <style>
+        body {
+            background-image: url('https://www.cronista.com/files/image/506/506181/63c94f06a5588.jpg');
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2b2b2b, #1c1c1c);
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            perspective: 1000px;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 12px;
+            padding: 20px;
+            max-width: 90%;
+            width: 500px;
+            text-align: center;
+            transform-style: preserve-3d;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            animation: float 3s ease-in-out infinite;
+        }
+        h1 {
+            color: #e50914;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            text-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        a {
+            color: #e50914;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #fff;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #e50914;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #c8102e;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            p, ul {
+                font-size: 0.9rem;
+            }
+            .button {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.2rem;
+            }
+            p, ul {
+                font-size: 0.8rem;
+            }
+            .button {
+                font-size: 0.8rem;
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Actualización en Progreso</h1>
+        <p>¡Estamos trabajando para ofrecerte una  mejor experiencia! La actualización incluye:</p>
+        <ul>
+            <li><strong>Mejoras en la secciones:</strong> La aplicación será más facil de usar.</li>
+            <li><strong>Nuevas funcionalidades:</strong> Nuevas características para mejorar tu experiencia.</li>
+            <li><strong>Corrección de errores:</strong> Hemos solucionado varios problemas.</li>
+            <li><strong>Actualización de seguridad:</strong> Mejora en la protección de tu información.</li>
+        </ul>
+        
+        <p class="footer">Gracias por tu comprensión y por ser parte de proyecto.</p>
+        <p class="footer">Fecha de actualización: 27/7/24 - 12:45 Am Colombia</p>
+        <p class="footer">Más información en <a href="www.flixy.uno">Nuestro Sitio Web</a> o en nuestras redes sociales.</p>
+        <a href="https://flixyappoficial.github.io/pagina-aplicacion/" class="button">Volver a la página principal</a>
+    </div>
+</body>
+</html>
