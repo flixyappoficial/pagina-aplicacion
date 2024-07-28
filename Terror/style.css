@@ -300,3 +300,13 @@ body {
         /* Otros estilos específicos para dispositivos móviles */
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .video-container {
+        
+        padding-bottom: 76.15%;
+        
+        top: 500px; /* Distancia desde el borde superior */
+    }
+    
+}
